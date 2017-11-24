@@ -5,5 +5,6 @@ extension Droplet {
     RemindersController().addRoutes(to: self)
     UserPetController().addRoutes(to: self)
     ServerController().addRoutes(to: self)
+    WebPageController().addRoutes(to: self)
   }
 }

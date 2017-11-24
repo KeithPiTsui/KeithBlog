@@ -9,7 +9,7 @@ struct ServerController {
   
   
   func allInfo(_ req: Request) throws -> ResponseRepresentable {
-    if let info = try User.database?.raw("SELECT @@version as version") {
+    if let info = try User.database?.raw("show tables") {
       return info.wrapped.description
     } else {
       return "unknow error"

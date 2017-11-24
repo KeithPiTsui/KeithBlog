@@ -1,7 +1,8 @@
 @_exported import Vapor
 
 extension Droplet {
-    public func setup() throws {
-        try setupRoutes()
-    }
+  public func setup() throws {
+    try setupRoutes()
+    
+  }
 }
