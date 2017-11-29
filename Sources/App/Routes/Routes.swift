@@ -6,5 +6,6 @@ extension Droplet {
     UserPetController().addRoutes(to: self)
     ServerController().addRoutes(to: self)
     WebPageController().addRoutes(to: self)
+    CookiesController().addRoutes(to: self)
   }
 }

@@ -1,4 +1,6 @@
 import Vapor
+import Cookies
+import HTTP
 import FluentProvider
 
 fileprivate weak var _drop: Droplet!
@@ -19,6 +21,5 @@ struct WebPageController {
   func welcome(_ req: Request) throws -> ResponseRepresentable {
     return try _drop.view.make("welcome",["message":"Keith"])
   }
-  
 }
 
